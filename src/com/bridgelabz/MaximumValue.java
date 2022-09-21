@@ -26,8 +26,14 @@ public class MaximumValue<T extends Comparable >
 			max = val3;
 		if(val4.compareTo(max)>=0)
 			max=val4;
+		printMax(max);
 		return max;
 	}
+	//Genric Method to print the maximum value
+		public static<T> void printMax(T val)
+		{
+			System.out.println("Maximum value is ::"+ val);
+		}
 	
 	public static void main (String [] args)
 	{
